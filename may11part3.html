@@ -29,8 +29,22 @@
  </head>
 
  <body>
+ 
+ <button onclick="makeTable();">Make ASCII Table</button>
 
- <div id="asciiDiv"></div>
+ <div id="asciiDiv">
+
+ <table>
+
+ <tr><th>Number</th><th>Letter</th></tr>
+
+ for (i=0; i<=127; i++){
+ <tr><td>i.charCodeAt(0)</td><td>&#i;</td></tr>
+ }
+ 
+ </table>
+
+ </div>
 
  </body>
 
