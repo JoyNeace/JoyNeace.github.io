@@ -37,9 +37,11 @@
         if (!isAlpha(character)) {
           return character;
         }
-        var transformedCharCode = charToNumber(character) - 65;
-        transformedCharCode*= myMultiplier;
+        var transformedCharCode = -1;
+        transformedCharCode = characterToNumber(character) - 65;
+        transformedCharCode *= myMultiplier; 
         transformedCharCode += myAdder;
+        transformedCharCode %= 26;
         transformedCharCode += 65;
 
         return numberToCharacter(transformedCharCode);
