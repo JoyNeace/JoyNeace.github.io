@@ -29,6 +29,15 @@
             document.write("<b><div id='d1'>" + hours + ":" + 
                 minutes + ": " + seconds + " " + suffix + "</div></b>");
 
+        function hideElement(id_attribute_value) 
+        {
+			  if (document.getElementById && document.getElementById(id_attribute_value) & document.getElementById(id_attribute_value).style) 
+			  {
+                    document.getElementById(id_attribute_value).style.visibility = "hidden";
+			  }
+		}        
         </script>
+        <button type="button" onclick="hideElement('d1');">hide div</button>
+
     </body>
 </html>
