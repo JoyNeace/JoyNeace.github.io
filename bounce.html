@@ -1,8 +1,7 @@
 <!doctype html5>
 <html>
-  <h1>First Real Site </h1>
   <head>
-    <title>The Game of Pong </title>
+    <title>Bouncing Balls </title>
     <script type="text/javascript">
       // Time in milliseconds before next refresh
       var REFRESH_TIME = 10;
@@ -48,7 +47,7 @@
        * things that are to be drawn.
        */
       function draw() {
-        var context = pongCanvas.getContext('2d');
+        var context = bounceCanvas.getContext('2d');
         context.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
         drawBall(context);
       }
@@ -56,7 +55,7 @@
       setInterval(draw, REFRESH_TIME);
     </script>
     <style>
-      canvas#pongCanvas {
+      canvas#bounceCanvas {
         border-top-width: 2px;
         border-left-width: 2px;
         border-bottom-width: 2px;
@@ -73,6 +72,7 @@
     </style>
   </head>
   <body>
-    <canvas id="pongCanvas" width="500" height="300"></canvas>
+    <h1>Bouncy Ball</h1>
+    <canvas id="bounceCanvas" width="500" height="300"></canvas>
   </body>
 </html> 
