@@ -26,13 +26,16 @@
       Still inside the div...
     </div>    
     <script>
-      var name = "Nick";
-      console.log("Hello " + name);
-      if(name.length > 7)
+      var turnInAllWork = false;
+      var turnInMostWork = true; 
+      if(turnInAllWork)
       {
-        console.log("Wow, you have a long name!");
+        console.log("You have an A!");
+      }else if(turnInMostWork)
+      {
+        console.log("You have a C!");
       }else{
-        console.log("Your name isn't very long.");
+        console.log("You have an F! You need to turn in your assignments!");
       }
     </script>
   </body>
