@@ -24,24 +24,13 @@
       Inside the div element.
       <p> This will be yellow!</p>
       Still inside the div...
-    </div>    
+    </div> 
     <script>
-      var turnInAllWork = false;
-      var turnInMostWork = true; 
-      if(turnInAllWork)
+      var animals = ["Lion", "Flamingo", "Polar Bear", "Boa Constrictor"];
+      for(var i = 0; i < animals.length; i++)
       {
-        console.log("You have an A!");
-      }else if(turnInMostWork)
-      {
-        console.log("You have a C!");
-      }else{
-        console.log("You have an F! You need to turn in your assignments!");
+        console.log("The zoo contains a " + animals[i] +".");
       }
-      for(var sheepCounted = 1; sheepCounted <= 10; sheepCounted++)
-      {
-        console.log("Hey!");
-      }
-      console.log("Zzzzzzzzzzzzzz");
     </script>
   </body>
 </html>
