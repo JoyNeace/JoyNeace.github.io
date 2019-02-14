@@ -25,19 +25,19 @@
       <p> This will be yellow!</p>
       Still inside the div...
     </div> 
-    <script>
-      var animals = ["Lion", "Flamingo", "Polar Bear", "Boa Constrictor"];
-      for(var i = 0; i < animals.length; i++)
-      {
-        console.log("The zoo contains a " + animals[i] +".");
-      }
-      
+    <script>     
       var name = "Joy";
       for(var i = 0; i < name.length; i++)
       {
         console.log("Give me a "+name[i]);
       }
       console.log("Go "+name+"!");
+      
+      for(var i = 1; i < 10000; i *= 2)
+      {
+        // i *= 2 means i = i * 2
+        console.log(i);
+      }
     </script>
   </body>
 </html>
