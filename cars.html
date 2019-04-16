@@ -45,10 +45,47 @@
         });
       };
       
+      Car.prototype.moveLeft = function()
+      {
+        this.x -= 5; // subtracts 5 from the x value
+        
+        // this updates the position on the screen
+        this.carElement.css({
+          left: this.x, 
+          top: this.y
+        });
+      };
+      
+      Car.prototype.moveUp = function()
+      {
+        this.y -= 5; // subtracts 5 from the y value
+        
+        // this updates the position on the screen
+        this.carElement.css({
+          left: this.x, 
+          top: this.y
+        });
+      };
+      
+      Car.prototype.moveDown = function()
+      {
+        this.y += 5; // adds 5 to the y value
+        
+        // this updates the position on the screen
+        this.carElement.css({
+          left: this.x, 
+          top: this.y
+        });
+      };
+      
       tesla.draw();
       tesla.moveRight();
       tesla.moveRight();
       tesla.moveRight();
+      tesla.moveLeft();
+      tesla.moveUp();
+      tesla.moveDown();
+      tesla.moveDown();
       var nissan = new Car(100, 200);
       nissan.draw();
       nissan.moveRight();
